@@ -43,7 +43,7 @@ public function __construct(
 composer require --dev your-username/php-cs-fixer-constructor-multiline
 ```
 
-## �� Usage
+## 👉 Usage
 
 Add to your `.php-cs-fixer.php`:
 
