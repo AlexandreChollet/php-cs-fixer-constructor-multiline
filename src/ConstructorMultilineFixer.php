@@ -44,7 +44,7 @@ class Test {
 
     public function getName(): string
     {
-        return 'YourNamespace/constructor_multiline';
+        return 'AlexandreChollet/constructor_multiline';
     }
 
     public function isCandidate(Tokens $tokens): bool
