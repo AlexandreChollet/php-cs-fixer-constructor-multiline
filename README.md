@@ -53,12 +53,20 @@ Add to your `.php-cs-fixer.php`:
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__ . '/src');
 
-return (new PhpCsFixer\Config())
+$config = new PhpCsFixer\Config();
+
+// Register your custom rule
+$config->registerCustomFixers([
+    new \AlexandreChollet\PhpCsFixerConstructorMultiline\ConstructorMultilineFixer(),
+]);
+
+return $config
     ->setRules([
         '@PSR12' => true,
-        'YourNamespace/constructor_multiline' => true,
+        'AlexandreChollet/constructor_multiline' => true
     ])
     ->setFinder($finder);
+
 ```
 
 ## 🎉 Why This Exists
